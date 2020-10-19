@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-prs-backend';
+
+  server: string = "http://localhost";
+  port: string = "5000";
+  baseurl: string = `${this.server}:${this.port}/api`; 
+
 }
